@@ -164,7 +164,7 @@ def generate_d3pm_smc(
                                 # Resample indices with replacement
                                 if resample_strategy == 'multinomial':
                                         idx = torch.multinomial(weights, num_samples=batch_size, replacement=True)
-                                else:
+                                else: #not implemented here
                                         idx = torch.multinomial(weights, num_samples=batch_size, replacement=True)
                                 sample = sample[idx]
 
